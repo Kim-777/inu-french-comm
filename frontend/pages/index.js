@@ -13,7 +13,8 @@ const Home = () => {
 
     return (
         <div>
-            <div>ㅆㅂ</div>
+            <div>hello</div>
+            <div>hello</div>
             <div>{message}</div>
             <button onClick={onClick}>click!</button>
         </div>
