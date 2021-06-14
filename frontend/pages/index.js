@@ -7,7 +7,7 @@ const index = () => {
     const [message, setMessage] = useState("test");
 
     const onClick = useCallback(async () => {
-        const result = await axios.get('http://localhost:8080/hello');        
+        const result = await axios.get('http:localhost:8080/hello');        
         setMessage(result.data);
     }, []);
 
