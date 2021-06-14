@@ -13,6 +13,7 @@ const Home = () => {
 
     return (
         <div>
+            <div>ㅆㅂ</div>
             <div>{message}</div>
             <button onClick={onClick}>click!</button>
         </div>
