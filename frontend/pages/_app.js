@@ -3,6 +3,8 @@ import Head from 'next/head';
 import 'antd/dist/antd.css';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
+import '../css/reset.css';
+import Layout from '../components/Layout';
 
 const App = ({ Component }) => {
     return (
@@ -12,9 +14,11 @@ const App = ({ Component }) => {
                 <title>inu-french</title>
                 <link rel="shortcut icon" href="/favicon.png" />
             </Head>
-            <Header />
-            <Component />
-            <Footer />
+            <Layout>
+                <Header />
+                <Component />
+                <Footer />
+            </Layout>
         </div>
     )
 }
