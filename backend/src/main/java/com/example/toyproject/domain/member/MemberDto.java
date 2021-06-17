@@ -14,8 +14,8 @@ public class MemberDto {
     private String name;
     private String password;
     private String phoneNumber;
-    private String nickName;
-    private String eMail;
+    private String nickname;
+    private String email;
     private Role role;
 
 
@@ -23,9 +23,9 @@ public class MemberDto {
         return Member.builder()
                 .name(this.name)
                 .password(this.password)
-                .nickName(this.nickName)
+                .nickname(this.nickname)
                 .phoneNumber(this.phoneNumber)
-                .eMail(this.eMail)
+                .email(this.email)
                 .role(this.role)
                 .build();
     }

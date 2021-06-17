@@ -21,14 +21,15 @@ public class Member {
     @Column(nullable = false)
     private String password;
 
+
     @Column(nullable = false)
     private String phoneNumber;
 
     @Column(nullable = false)
-    private String nickName;
+    private String nickname;
 
     @Column(nullable = false)
-    private String eMail;
+    private String email;
 
     @Enumerated(EnumType.STRING)
     private Role role;
@@ -41,12 +42,12 @@ public class Member {
     // 생년월일 추가해보고싶다
 
     @Builder
-    public Member(String name, String password, String phoneNumber, String nickName, Role role, String eMail){
+    public Member(String name, String password, String phoneNumber, String nickname, Role role, String email){
         this.name = name;
         this.password= password;
         this.phoneNumber = phoneNumber;
-        this.nickName = nickName;
+        this.nickname = nickname;
         this.role = role;
-        this.eMail=  eMail;
+        this.email=  email;
     }
 }
