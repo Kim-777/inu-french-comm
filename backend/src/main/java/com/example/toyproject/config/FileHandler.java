@@ -41,8 +41,6 @@ public class FileHandler {
             String path = "images" + File.separator + current_date;
             File file = new File(path);
 
-            System.out.println(path);
-            System.out.println(absolutePath);
             
             // 디렉터리가 존재하지 않을 경우
             if(!file.exists()) {
